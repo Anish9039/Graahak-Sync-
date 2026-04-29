@@ -285,7 +285,7 @@ async def ingest_dataset(
         data_preview=df_clean.head(5).to_dicts() 
     )
 
-# --- 7. RUNNER ---
+# RUNNER ---
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
